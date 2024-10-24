@@ -1,7 +1,21 @@
+-- nvim v0.8.0
 return {
   "kdheepak/lazygit.nvim",
-  -- requires = { 'nvim-telescope/telescope.nvim' }, -- Optional: If you want to use it with Telescope
-  config = function()
-    require("lazygit").setup() -- Configure if needed
-  end,
+  lazy = true,
+  cmd = {
+    "LazyGit",
+    "LazyGitConfig",
+    "LazyGitCurrentFile",
+    "LazyGitFilter",
+    "LazyGitFilterCurrentFile",
+  },
+  -- optional for floating window border decoration
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+  },
+  -- setting the keybinding for LazyGit with 'keys' is recommended in
+  -- order to load the plugin when the command is run for the first time
+  keys = {
+    { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
+  },
 }
