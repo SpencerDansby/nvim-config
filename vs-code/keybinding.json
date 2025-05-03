@@ -1,0 +1,99 @@
+[
+  {
+    "key": "tab tab",
+    "command": "extension.vim_escape",
+    "when": "editorTextFocus && vim.active && !inDebugRepl"
+  },
+  {
+    "key": "shift+6 i",
+    "command": "notebook.focusBottom",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "cmd+end",
+    "command": "-notebook.focusBottom",
+    "when": "notebookEditorFocused && !inputFocus"
+  },
+  {
+    "key": "cmd+end",
+    "command": "editor.action.inlineEdit.accept",
+    "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineEdit.accept",
+    "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+  },
+  {
+    "key": "cmd+end",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+
+  // File Tree
+  {
+    "key": "ctrl+shift+f",
+    "command": "workbench.view.explorer",
+    "when": "true"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "explorer.deleteFile",
+    "when": "explorerViewletFocus"
+  },
+  // File Tree - end
+
+  // Source Control
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "true"
+  },
+  // Source Control - end
+
+  // Terminal
+  {
+    "key": "ctrl+a",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // Terminal - end
+
+  // Autocomplete Suggestion
+  {
+    "key": "option+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  }
+  // Autocomplete Suggestion - end
+]
