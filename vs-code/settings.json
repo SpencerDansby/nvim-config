@@ -11,7 +11,7 @@
   "editor.fontSize": 14,
   "typescript.preferences.importModuleSpecifier": "relative",
   "git.autofetch": true,
-  "playwright.reuseBrowser": false,
+  "playwright.reuseBrowser": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
@@ -24,7 +24,7 @@
     "*.mts": "${capture}.typegen.ts",
     "*.cts": "${capture}.typegen.ts"
   },
-  "playwright.showTrace": true,
+  "playwright.showTrace": false,
   "svg.preview.mode": "svg",
   "notebook.defaultFormatter": "esbenp.prettier-vscode",
   "vsicons.dontShowNewVersionMessage": true,
@@ -133,5 +133,17 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.inheritEnv": false
-}
+  "terminal.integrated.inheritEnv": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+} 

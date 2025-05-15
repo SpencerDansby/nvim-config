@@ -1,10 +1,5 @@
 [
   {
-    "key": "tab tab",
-    "command": "extension.vim_escape",
-    "when": "editorTextFocus && vim.active && !inDebugRepl"
-  },
-  {
     "key": "shift+6 i",
     "command": "notebook.focusBottom",
     "when": "notebookEditorFocused && !inputFocus"
@@ -25,7 +20,7 @@
     "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
   },
   {
-    "key": "cmd+end",
+    "key": "tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   },
