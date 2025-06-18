@@ -82,6 +82,11 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
   // Terminal - end
 
   // Autocomplete Suggestion
